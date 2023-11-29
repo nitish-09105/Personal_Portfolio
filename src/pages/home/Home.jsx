@@ -1,5 +1,5 @@
 import React from 'react'
-import Profile from '../../assets/profile.jpg'
+import Profile from '../../assets/profile1.jpg'
 import {Link} from 'react-router-dom';
 import {FaArrowRight} from 'react-icons/fa';
 import './Home.css';
@@ -13,7 +13,8 @@ const Home = () => {
             <span>I'm Nitish Kumar.</span><br/>An Engineering Student
           </h1>
           <p className='home__description'>
-          I am a student of BTech computer science and engineering (Artificial Intelligence And Machine Learning). Being a student this is my target to fulfill my course and implement the whole knowledge to create the projects that are based on machine learning. usually interested in full-stack development and continuing my future according to my dream which is web development with ai.
+
+I'm currently a student pursuing my BTech in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning. My primary objective is to successfully navigate through my coursework and leverage my knowledge to develop projects centered around machine learning. My passion lies in the realm of full-stack development, and I envision my future revolving around the exciting field of web development integrated with AI. If you have any guidance or insights to share on this journey, I'm eager to learn and explore further.
           </p>
           <Link to ='/about' className='button'>
             More About Me{' '} <span className='button__icon'><FaArrowRight/></span>

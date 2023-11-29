@@ -9,12 +9,12 @@ import {
 } from 'react-icons/fa';
 import { FiFileText, FiUser, FiExternalLink } from 'react-icons/fi';
 
-import Work1 from './assets/project-1.jpg';
-import Work2 from './assets/project-2.jpg';
-import Work3 from './assets/project-3.jpg';
-import Work4 from './assets/project-4.jpg';
-import Work5 from './assets/project-5.jpg';
-import Work6 from './assets/project-6.jpg';
+import Work1 from './assets/inotebook.jpeg';
+import Work2 from './assets/student-record.jpg';
+import Work3 from './assets/eye-color-bald-child.jpg';
+import Work4 from './assets/news-app.jpg';
+import Work5 from './assets/retail-billing.jpg';
+import Work6 from './assets/weather-app.jpg';
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -84,9 +84,10 @@ export const personalInfo = [
 
   {
     id: 5,
-    title: 'Freelance : ',
-    description: 'Available',
+    title: 'Phone : ',
+    description: '+91-9315797739',
   },
+
 
   {
     id: 6,
@@ -94,11 +95,15 @@ export const personalInfo = [
     description: 'Ghaziabad U.P.',
   },
 
+  
+  
+
   {
     id: 7,
-    title: 'Phone : ',
-    description: '+91-9315797739',
+    title: 'Github : ',
+    description: 'nitish-09105',
   },
+
 
   {
     id: 8,
@@ -123,12 +128,12 @@ export const stats = [
   {
     id: 1,
     no: 'UG',
-    title: '4rd Year<br /> Btech CSE(AI&ML)',
+    title: '4rd Year<br /> Btech CSE (AI&ML)',
   },
 
   {
     id: 2,
-    no: '7+',
+    no: '10+',
     title: 'Completed <br /> Projects',
   },
 
@@ -141,7 +146,7 @@ export const stats = [
   {
     id: 4,
     no: '5+',
-    title: ' participated  in <br />Hackathons & others',
+    title: ' participated  in <br />Hackathons & other competitions',
   },
 ];
 
@@ -165,14 +170,13 @@ export const resume = [
   },
 
 
-
   {
     id: 4,
     category: 'education',
     icon: <FaGraduationCap />,
     year: '2024',
     title: 'Bachelor Of Technology<span>Abes Engineering College Ghaziabad</span>',
-    desc: 'Currently studying in 4th year and my branch is Computer Scince And Engineering (AI & ML)',
+    desc: 'Currently studying in 4th year and my branch is Computer Scince And Engineering (AI & ML) with CGPA 7.4',
   },
 
   {
@@ -190,26 +194,26 @@ export const resume = [
 export const skills = [
   {
     id: 1,
-    title: 'C',
-    percentage: '60',
+    title: 'C++',
+    percentage: '50',
   },
 
   {
     id: 2,
-    title: 'C++',
-    percentage: '60',
+    title: 'Python',
+    percentage: '65',
   },
 
   {
     id: 3,
-    title: 'Java',
-    percentage: '40',
+    title: 'SQL',
+    percentage: '50',
   },
 
   {
     id: 4,
-    title: 'Python',
-    percentage: '65',
+    title: 'DSA',
+    percentage: '70',
   },
 
   {
@@ -221,19 +225,19 @@ export const skills = [
   {
     id: 6,
     title: 'ReactJS',
-    percentage: '60',
+    percentage: '70',
   },
 
   {
     id: 7,
     title: 'Web Development',
-    percentage: '60',
+    percentage: '65',
   },
 
   {
     id: 8,
     title: 'Machine Learning',
-    percentage: '40',
+    percentage: '50',
   },
 ];
 
@@ -241,12 +245,12 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: 'Music Player App',
+    title: 'iNoteBook Application',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'WebApp',
+        desc: 'Storing the notes of each user with valid authentication',
       },
       {
         icon: <FiUser />,
@@ -256,12 +260,12 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'ReactJs, Javascript',
+        desc: 'ReactJs, Expressjs, MongoDB, RestApi',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'nitish-09105/Music-Player',
+        desc: 'nitish-09105/inotebookProject',
       },
     ],
   },
@@ -269,12 +273,12 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Eye Color, Bald And Child Detection',
+    title: 'Student Record Management System',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'WebApp',
+        desc: 'Store Record of student in Database',
       },
       {
         icon: <FiUser />,
@@ -284,7 +288,35 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Python, ML',
+        desc: 'Python, SQL',
+      },
+      {
+        icon: <FiExternalLink />,
+        title: 'Preview : ',
+        desc: 'nitish-09105/student-management-system',
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    img: Work3,
+    title: 'Eye Colour, Bald And Child Detection',
+    details: [
+      {
+        icon: <FiFileText />,
+        title: 'Project : ',
+        desc: ' Detecting face and classifying the features',
+      },
+      {
+        icon: <FiUser />,
+        title: 'Client : ',
+        desc: 'Personal',
+      },
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'Python,Opencv, TensorFlow',
       },
       {
         icon: <FiExternalLink />,
@@ -295,14 +327,14 @@ export const portfolio = [
   },
 
   {
-    id: 3,
-    img: Work3,
-    title: 'Face Recognition System',
+    id: 4,
+    img: Work4,
+    title: 'News Application',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Application',
+        desc: 'Reading the Latest News',
       },
       {
         icon: <FiUser />,
@@ -312,40 +344,12 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Python,Opencv',
+        desc: 'Reactjs, Javascript, Api',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'N/A',
-      },
-    ],
-  },
-
-  {
-    id: 4,
-    img: Work4,
-    title: 'Calculator',
-    details: [
-      {
-        icon: <FiFileText />,
-        title: 'Project : ',
-        desc: 'WebApp',
-      },
-      {
-        icon: <FiUser />,
-        title: 'Client : ',
-        desc: 'Internship',
-      },
-      {
-        icon: <FaCode />,
-        title: 'Language : ',
-        desc: 'Javascript',
-      },
-      {
-        icon: <FiExternalLink />,
-        title: 'Preview : ',
-        desc: 'nitish-09105/Calculator',
+        desc: 'nitish-09105/News-App',
       },
     ],
   },
@@ -353,11 +357,11 @@ export const portfolio = [
   {
     id: 5,
     img: Work5,
-    title: 'Real Estate Price Prediction',
+    title: 'Retail Billing System',
     details: [
       {
         title: 'Project : ',
-        desc: 'Development',
+        desc: 'webapp generate or seach the Bill of product',
       },
       {
         title: 'Client : ',
@@ -365,11 +369,11 @@ export const portfolio = [
       },
       {
         title: 'Language : ',
-        desc: 'Python, ML',
+        desc: 'Python, SQL',
       },
       {
         title: 'Preview : ',
-        desc: 'nitish-09105/Real-Estate-price-prediction',
+        desc: 'nitish-09105/retail-billing-system',
       },
     ],
   },
@@ -377,12 +381,12 @@ export const portfolio = [
   {
     id: 6,
     img: Work6,
-    title: 'ToDo List',
+    title: 'Weather App',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Web Page',
+        desc: 'WebApp to detect the weather of any location',
       },
       {
         icon: <FiUser />,
@@ -392,12 +396,12 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: 'Language : ',
-        desc: 'Javascript',
+        desc: 'Javascript, Reactjs, Api',
       },
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'nitish-09105/Todo-list',
+        desc: 'nitish-09105/Weather-App',
       },
     ],
   },
