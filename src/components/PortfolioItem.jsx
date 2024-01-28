@@ -37,4 +37,4 @@ const PortfolioItem = ({img,title,details}) => {
     </div>
   )
 }
-export default PortfolioItem
+export default PortfolioItem;

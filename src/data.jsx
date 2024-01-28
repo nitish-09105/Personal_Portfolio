@@ -201,13 +201,13 @@ export const skills = [
   {
     id: 2,
     title: 'Python',
-    percentage: '65',
+    percentage: '70',
   },
 
   {
     id: 3,
     title: 'SQL',
-    percentage: '50',
+    percentage: '60',
   },
 
   {
@@ -218,20 +218,20 @@ export const skills = [
 
   {
     id: 5,
-    title: 'Javascript',
-    percentage: '60',
-  },
-
-  {
-    id: 6,
-    title: 'ReactJS',
+    title: 'Mern Stack',
     percentage: '70',
   },
 
   {
+    id: 6,
+    title: 'Data Analysis',
+    percentage: '60',
+  },
+
+  {
     id: 7,
-    title: 'Web Development',
-    percentage: '65',
+    title: 'Data Science',
+    percentage: '50',
   },
 
   {
@@ -250,7 +250,7 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Storing the notes of each user with valid authentication',
+        desc: 'Store notes of each user with valid authentication',
       },
       {
         icon: <FiUser />,
@@ -306,7 +306,7 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: ' Detecting face and classifying the features',
+        desc: ' Detect face and classify the features',
       },
       {
         icon: <FiUser />,
@@ -334,7 +334,7 @@ export const portfolio = [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Reading the Latest News',
+        desc: 'Read the Latest News',
       },
       {
         icon: <FiUser />,
@@ -361,7 +361,7 @@ export const portfolio = [
     details: [
       {
         title: 'Project : ',
-        desc: 'webapp generate or seach the Bill of product',
+        desc: 'webapp that generate or seach the Bill of product',
       },
       {
         title: 'Client : ',
