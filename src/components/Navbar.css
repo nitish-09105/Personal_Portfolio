@@ -37,7 +37,7 @@
 }
 
 .nav__toggle {
-    position: fixed;
+    position: absolute;
     top: 30px;
     right: 30px;
     width: 40px;
@@ -83,6 +83,7 @@
 
     .nav__toggle {
         display: none;
+        position: absolute;
     }
 
     .nav {

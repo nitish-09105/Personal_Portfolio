@@ -4,22 +4,26 @@
 .resume__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
+    z-index: -1;
 }
 
 .info__list {
     row-gap: 20px;
     margin-bottom: 32px;
+    z-index: -1;
 }
 
 .section__subtitle {
     font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .info__list .info__title,
 .info__list .info__description {
     font-size: var(--small-font-size);
+    
 }
 
 .info__list .info__description {
@@ -104,6 +108,7 @@
 .resume__item {
     position: relative;
     padding-left: 60px;
+    z-index: -1;
 }
 
 .resume__item::not(:last-child) {

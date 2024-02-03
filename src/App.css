@@ -167,6 +167,7 @@ img {
     position: relative;
     overflow: hidden;
     transition: all 0.25s ease-in-out;
+    z-index: -1;
   }
 
 
