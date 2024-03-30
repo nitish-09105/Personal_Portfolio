@@ -128,7 +128,7 @@ export const stats = [
   {
     id: 1,
     no: 'UG',
-    title: '4rd Year<br /> Btech CSE (AI&ML)',
+    title: '4th Year<br /> Btech CSE (AI&ML)',
   },
 
   {
@@ -155,13 +155,21 @@ export const resume = [
     id: 1,
     category: 'experience',
     icon: <FaBriefcase />,
-    year: 'Nov 2022 - PRESENT',
+    year: 'January 2024 - March 2024',
+    title: 'Affworld Technologies </span>',
+    desc: 'Worked as a Full Stack Developer Intern, etc.',
+  },
+  {
+    id: 2,
+    category: 'experience',
+    icon: <FaBriefcase />,
+    year: 'Nov 2022 - June 2023',
     title: 'Chegg Expert <span> Chegg India </span>',
     desc: 'Working as a freelance, solving problems regarding Coding, Academics, Competitive, etc.',
   },
 
   {
-    id: 2,
+    id: 3,
     category: 'experience',
     icon: <FaBriefcase />,
     year: 'June 2022 - July 2022',
@@ -187,6 +195,14 @@ export const resume = [
     title: 'Intermediate<span> DHRT Saraswati Vidya Mandir Ghaziabad </span>',
     desc: 'Scored 76.2% in PCM Stream.',
   },
+  {
+    id: 6,
+    category: 'education',
+    icon: <FaGraduationCap />,
+    year: '2018',
+    title: 'High School<span> DHRT Saraswati Vidya Mandir Ghaziabad </span>',
+    desc: 'Scored 76.4%.',
+  },
 
 
 ];
@@ -194,8 +210,8 @@ export const resume = [
 export const skills = [
   {
     id: 1,
-    title: 'C++',
-    percentage: '50',
+    title: 'C',
+    percentage: '60',
   },
 
   {
@@ -230,8 +246,8 @@ export const skills = [
 
   {
     id: 7,
-    title: 'Data Science',
-    percentage: '50',
+    title: 'Flask',
+    percentage: '60',
   },
 
   {
@@ -273,12 +289,12 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: 'Student Record Management System',
+    title: 'Employee Work Data Management System',
     details: [
       {
         icon: <FiFileText />,
         title: 'Project : ',
-        desc: 'Store Record of student in Database',
+        desc: 'Store Work of each Employee in Database',
       },
       {
         icon: <FiUser />,
@@ -293,7 +309,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: 'Preview : ',
-        desc: 'nitish-09105/student-management-system',
+        desc: 'nitish-09105/employee-work-data-management-system',
       },
     ],
   },
