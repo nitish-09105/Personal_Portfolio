@@ -1,48 +1,85 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './Contact.css';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { FaEnvelopeOpen, FaPhoneSquareAlt, FaGithub, FaTwitter, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import { FiSend } from 'react-icons/fi';
-import emailjs from '@emailjs/browser';
+import './Contact.css';
 
 const Contact = () => {
-  const [showMessage, setShowMessage] = useState(false);
+  const[userName,setUserName]=useState('');
+  const[userEmail,setUserEmail]=useState('');
+  const[subject,setSubject]=useState('');
+  const [message, setMessage] = useState('');
 
-  const handleClick = (e) => {
+
+  const handleOnSubmit = async (e) => {
     e.preventDefault();
-    const formFields = form.current.querySelectorAll('.form__control');
-    let isValid = true;
+    let result = await fetch(
+    'mongodb+srv://nitish002kr:4Uv2QyAOXXZ942rD@clustor0.ix6ml6f.mongodb.net/?retryWrites=true&w=majority&appName=clustor0', {
+        method: "post",
+        body: JSON.stringify({ userName, userEmail, subject, message }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    result = await result.json();
 
+    if (result) {
+        alert("Data saved succesfully");
+        setUserEmail("");
+        setUserName("");
+        setSubject("")
+        setMessage("");
+    }
+}
+
+
+
+  const form = useRef();
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!isFormValid) {
+      alert('Please fill out all the fields before submitting.');
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_u1pc5pk",
+        "template_d4a98ea",
+        form.current,
+        "3S6El_fa_yJbmjuj7"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Thank you! I will contact you as soon as possible.');
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleInputChange = (e) => {
+    
+    const formFields = form.current.querySelectorAll('.form__control');
+    setUserName(e.target.value)
+    setUserEmail(e.target.value)
+    setSubject(e.target.value)
+    setMessage(e.target.value)
+
+    let isValid = true;
     formFields.forEach(field => {
       if (!field.value.trim()) {
         isValid = false;
       }
     });
 
-    if (isValid) {
-      setShowMessage(true);
-    } else {
-      alert('Please fill out all the fields before submitting.');
-    }
-  };
-
-  useEffect(() => {
-    if (showMessage) {
-      alert('We will contact you soon...');
-    }
-  }, [showMessage]);
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_7k7innh', 'template_1wrnhf6', form.current, 'pE9NeC-KaUjbWuTdG')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-    e.target.reset();
+    setIsFormValid(isValid);
   };
 
   return (
@@ -85,22 +122,23 @@ const Contact = () => {
             </a>
           </div>
         </div>
+
         <form className="contact__form" ref={form} onSubmit={sendEmail}>
           <div className="form__input-group">
             <div className="form__input-div">
-              <input type="text" placeholder='Your Name' name='user_name' required className="form__control" />
+              <input type="text" placeholder='Your Name' name='user_name' required className="form__control" onChange={handleInputChange } />
             </div>
             <div className="form__input-div">
-              <input type="email" name='user_email' required placeholder='Your Email' className="form__control" />
+              <input type="email" name='user_email' required placeholder='Your Email' className="form__control" onChange={handleInputChange} />
             </div>
             <div className="form__input-div">
-              <input type="text" required placeholder='Your Subject' className="form__control" />
+              <input type="text" required placeholder='Your Subject' className="form__control" name="subject" onChange={handleInputChange} />
             </div>
           </div>
           <div className="form__input-div">
-            <textarea placeholder='Your Message' className='form__control textarea'></textarea>
+            <textarea placeholder='Your Message' className='form__control textarea' name="message" onChange={handleInputChange} />
           </div>
-          <button onClick={handleClick} className="button" >
+          <button className="button" type="submit" value='send' onClick={handleOnSubmit} disabled={!isFormValid}>
             Send Message
             <span className="button__icon contact__button-icon">
               <FiSend />
@@ -110,6 +148,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Contact;

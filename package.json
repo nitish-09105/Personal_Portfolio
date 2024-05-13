@@ -4,10 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
+    "@emailjs/browser": "^3.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dotenv": "^16.4.5",
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^5.0.0",
     "html-react-parser": "^3.0.16",
     "mongo": "^0.1.0",
@@ -17,6 +19,8 @@
     "react-icons": "^4.9.0",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

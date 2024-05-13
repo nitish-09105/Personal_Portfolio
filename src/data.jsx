@@ -100,8 +100,9 @@ export const personalInfo = [
 
   {
     id: 7,
-    title: 'Github : ',
-    description: 'nitish-09105',
+  title: 'GitHub : ',
+  description: 'Browse',
+  url: 'https://github.com/nitish-09105',
   },
 
 
@@ -114,7 +115,8 @@ export const personalInfo = [
   {
     id: 9,
     title: 'LinkedIn : ',
-    description: 'nitish-kumar-a97b10203',
+    description: 'Browse',
+    url:'https://www.linkedin.com/in/nitish-kumar-a97b10203/'
   },
 
   {
@@ -184,7 +186,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2024',
     title: 'Bachelor Of Technology<span>Abes Engineering College Ghaziabad</span>',
-    desc: 'Currently studying in 4th year and my branch is Computer Scince And Engineering (AI & ML) with CGPA 7.4',
+    desc: 'Currently studying in 4th year and my branch is Computer Scince And Engineering (AI & ML) with CGPA 7.49',
   },
 
   {

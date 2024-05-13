@@ -1,20 +1,20 @@
 .home{
     grid-template-columns: 4.32fr 7.68fr;
     margin-top: 10vh;
-    padding: 40px;
+    padding: 70px;
     max-height: 90vh;
 }
 
 .home__img{
-    height: 90%;
+    height: 100%;
     filter: drop-shadow(0.25rem 0.25rem 0.5rem #8e2222);
     object-fit: cover;
     border-radius: 30px;
-    box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     z-index: 1;
 }
 .home__img:hover{
-    scale: 1.01;
+    scale: 1.02;
     transition:all .5s ease;
     border-radius: 7%;
 }
