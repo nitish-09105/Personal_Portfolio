@@ -379,7 +379,7 @@ export const portfolio = [
     details: [
       {
         title: 'Project : ',
-        desc: 'webapp that generate or seach the Bill of product',
+        desc: 'Desktop-app that generate or seach the Bill of product',
       },
       {
         title: 'Client : ',
